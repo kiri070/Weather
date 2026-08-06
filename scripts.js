@@ -45,7 +45,7 @@ document.addEventListener("click", (e) => {
 //今日の天気を取得する関数
 async function getWeather()
 {
-    const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=34.69&longitude=135.50&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code");
+    const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=34.744&longitude=135.606&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code");
     const data = await response.json();
 
     //天気の表示
@@ -95,7 +95,7 @@ async function getWeather()
 //明日以降の天気を取得する関数
 async function getDailyWeather()
 {
-    const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=34.69&longitude=135.50&daily=weather_code,temperature_2m_max,temperature_2m_min,wind_speed_10m_max,relative_humidity_2m_mean&timezone=Asia%2FTokyo");
+    const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=34.724733&longitude=135.606319&daily=weather_code,temperature_2m_max,temperature_2m_min,wind_speed_10m_max,relative_humidity_2m_mean&timezone=Asia%2FTokyo");
 
     const data = await response.json();
 
