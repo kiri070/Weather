@@ -37,14 +37,58 @@
     color:white;
     background-color: rgb(62, 49, 27);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 10px;
+    overflow-x: auto; /* 横スクロール */
+    gap: 20px;
 
     font-size: 20px;
 
     border: double 5px #3ba7ff;
     border-width: 10px;
+}
+/*今日*/
+#todayWeatherGP 
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 5px;
+    border-left: double 7px #c5d02d;
+    border-right: double 7px #c5d02d;
+}
+/*明日*/
+#tomorrowWeatherGP
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-left: double 7px #c5d02d;
+    border-right: double 7px #c5d02d;
+}
+/*明後日*/
+#afterTomorrowWeatherGP
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-left: double 7px #c5d02d;
+    border-right: double 7px #c5d02d;
+}
+
+#temperature_next,
+#temperature_afterTomorrow
+{
+    /* 改行コードを使用 */
+    white-space: pre-line;
+}
+
+/*子要素を小さくしない*/
+#todayWeatherGP,
+#tomorrowWeatherGP,
+#afterTomorrowWeatherGP
+{
+    flex-shrink: 0;
 }
 
 /* ユーザーの入力エリア */
