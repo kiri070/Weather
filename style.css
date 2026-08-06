@@ -1,0 +1,87 @@
+/* body */
+#body
+{
+    text-align: center; 
+    background-color: #383838;
+}
+
+/* メニュー欄 */
+#menu
+{
+    color: white;
+    text-align: left;
+}
+#menu a
+{
+    color: white;
+}
+#menu ul
+{
+    list-style-position: inside;
+}
+
+/* h1見出しテキスト */
+#h1_Text
+{
+    color:white;
+    border-left: double 7px #c5d02d;
+    border-right: double 7px #c5d02d;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* 天気を表示するエリア */
+#showWeatherGP
+{
+    color:white;
+    background-color: rgb(62, 49, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 20px;
+
+    border: double 5px #3ba7ff;
+    border-width: 10px;
+}
+
+/* ユーザーの入力エリア */
+#userInputGP
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 更新ボタン */
+#UpdateButton
+{
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    background-color: #f0eed5;
+
+    border: 2px solid rgb(230, 210, 31);
+    border-radius: 10%;
+
+    transition: 0.3s; /* 動きを滑らかに */
+}
+#UpdateButton:hover
+{
+    transform: scale(1.1);
+}
+#UpdateButton:active
+{
+    transform: scale(0.9);
+}
+
+
+#showTimeGP
+{
+    color: white;
+    font-size: 15px;
+}

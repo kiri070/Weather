@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body id = "body">
+    <h1 id="h1_Text">大阪 天気</h1>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="https://open-meteo.com/">情報元: open-meteo</a></li>
+        </ul>
+    </nav>
+
+    <div id="showWeatherGP">
+        <span id="weather"></span>
+        <span id="temperature"></span>
+        <span id="humidity"></span>
+        <span id="windSpeed"></span> 
+    </div>
+
+    <div id="userInputGP">
+        <button id="UpdateButton">更新</button>
+    </div>
+    
+    <div id="showTimeGP">
+        <span>最終更新: </span>
+        <span id="year"></span>
+        <span id="month"></span>
+        <span id="day"></span>
+        <span id="hour"></span>
+        <span id="minutes"></span>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
